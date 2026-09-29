@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'none'; connect-src 'none'; font-src 'none'; form-action 'none'; base-uri 'none'; manifest-src 'none'; worker-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Diagnóstico ENTIMOTORS</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+  <h1>Diagnóstico ENTIMOTORS</h1>
+  <p>Esta página revisa la información guardada en este teléfono por la versión anterior de ENTIMOTORS.
+     <b>Solo lee: no cambia, no borra y no envía nada por su cuenta.</b></p>
+  <p>Ábrela en <b>Chrome</b>, en el mismo teléfono donde está instalada la app ENTIMOTORS.</p>
+  <button type="button" id="btnGenerar">Generar diagnóstico</button>
+  <p id="estado" role="status"></p>
+  <section id="resultado" hidden>
+    <pre id="resumen"></pre>
+    <div class="acciones">
+      <button type="button" id="btnCompartir" hidden>Compartir</button>
+      <button type="button" id="btnCopiar">Copiar</button>
+    </div>
+    <textarea id="informe" readonly rows="8" aria-label="Informe técnico"></textarea>
+    <p class="nota">El informe no contiene nombres, teléfonos, placas, fotos ni contraseñas.</p>
+  </section>
+</main>
+<script src="diag.js"></script>
+</body>
+</html>
