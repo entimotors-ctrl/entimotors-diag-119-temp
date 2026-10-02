@@ -1,0 +1,12 @@
+:root { color-scheme: light dark; --fondo: #ffffff; --texto: #111111; --borde: #cccccc; --acento: #c1121f; }
+@media (prefers-color-scheme: dark) { :root { --fondo: #0a0a0a; --texto: #f2f2f2; --borde: #444444; } }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.5 system-ui, sans-serif; }
+main { max-width: 36rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.3rem; }
+button { font: inherit; padding: 0.8rem 1.2rem; border-radius: 0.6rem; border: 1px solid var(--borde); background: var(--acento); color: #fff; width: 100%; margin: 0.4rem 0; }
+button[disabled] { opacity: 0.5; }
+.acciones { display: flex; gap: 0.5rem; }
+pre { white-space: pre-wrap; border: 1px solid var(--borde); border-radius: 0.6rem; padding: 0.7rem; }
+textarea { width: 100%; box-sizing: border-box; font: 12px/1.3 monospace; background: transparent; color: var(--texto); border: 1px solid var(--borde); }
+.nota { font-size: 0.85rem; opacity: 0.8; }
+.secundario { background: transparent; color: var(--texto); }
